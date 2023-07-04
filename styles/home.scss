@@ -1,0 +1,49 @@
+.main {
+  &_container {
+    position: absolute;
+    top: 30vh;
+    left: 15vw;
+
+    @include mobile {
+      top: 20vh;
+      left: 5vw;
+    }
+  }
+
+  &_name {
+    width: 70vw;
+    
+    @include mobile {
+      width: 90vw;
+    }
+
+    @include lightMode {
+      filter: invert(1);
+    }
+  }
+
+  &_subtitle {
+    text-align: end;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+.social {
+  &_list {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0.5rem;
+
+    display: flex;
+  }
+}
+
+.version {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
