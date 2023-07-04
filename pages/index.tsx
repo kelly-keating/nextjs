@@ -27,7 +27,7 @@ export default function Home({ projects }: Props) {
       </div>
 
       <div className="version">
-        <p>v0.0.2</p>
+        <p>v0.0.3</p>
       </div>
     </main>
   )
