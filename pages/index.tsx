@@ -1,3 +1,4 @@
+import { SocialIcon } from "react-social-icons"
 import ProjectList from "../components/ProjectList"
 import { Project } from "../models/projects"
 
@@ -6,6 +7,8 @@ interface Props {
 }
 
 export default function Home({ projects }: Props) {
+  const sexyIcon = (url) => <SocialIcon url={url} className="social_icon" fgColor="white" bgColor="black" />
+
   return (
     <main>
       <div className="main_container">
@@ -19,12 +22,12 @@ export default function Home({ projects }: Props) {
       
       {/* <ProjectList projects={projects} /> */}
       <div className="social_list">
-        <div>GitHub</div>
-        <div>LinkedIn</div>
+        {sexyIcon("https://github.com/kelly-keating")}
+        {sexyIcon("https://linkedin.com/in/kelly-keating-nz/")}
       </div>
 
       <div className="version">
-        <p>v0.0.1</p>
+        <p>v0.0.2</p>
       </div>
     </main>
   )
