@@ -1,6 +1,8 @@
 import { SocialIcon } from "react-social-icons"
-import ProjectList from "../components/ProjectList"
 import { Project } from "../models/projects"
+
+import Name from "../components/Name"
+// import ProjectList from "../components/ProjectList"
 
 interface Props {
   projects: Project[]
@@ -12,11 +14,7 @@ export default function Home({ projects }: Props) {
   return (
     <main>
       <div className="main_container">
-        <img
-          className="main_name"
-          src="/name.png"
-          alt="Kelly Keating Logo"
-        />
+        <Name className="main_name" />
         <h2 className="main_subtitle">Kick ass web dev</h2>
       </div>
       
@@ -27,7 +25,7 @@ export default function Home({ projects }: Props) {
       </div>
 
       <div className="version">
-        <p>v0.0.3</p>
+        <p>v0.0.4</p>
       </div>
     </main>
   )
