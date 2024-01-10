@@ -12,7 +12,7 @@ function Footer() {
       </div>
 
       <div className="version">
-        <p>v0.0.4</p>
+        <p>v0.0.5</p>
       </div>
     </footer>
   )
