@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./home.scss";
+@import "./projects.scss";
 @import "./layout.scss";
 
 * {
@@ -29,6 +30,11 @@ body {
   width: 70vw;
 
   h2 {
-    border-bottom: 5px solid white;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid white;
+
+    @include lightMode {
+      border-bottom: 3px solid black;
+    }
   }
 }
