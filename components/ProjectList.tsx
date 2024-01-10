@@ -2,6 +2,7 @@ import Link from "next/link"
 import { projects } from "../api/hardData"
 
 function ProjectList() {
+  // TODO: use on home ot merge into projects/index?
   return (
     <div>
       <p>A word to start - I love discovering new things and finding out how things work, and because of that I do love starting new projects. Usually before the last one has been finished.</p>

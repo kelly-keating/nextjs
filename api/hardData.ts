@@ -1,5 +1,7 @@
 import { Project } from "../models/projects"
 
+//  TODO: fill out project blurbs
+
 export const projects = [
   { id: 'gitmaster', name: 'gitmaster', image: '', blurb: '' },
   { id: 'video-feeder', name: 'video feeder', image: '', blurb: '' },
@@ -8,3 +10,4 @@ export const projects = [
   { id: 'curriculum', name: 'curriculum', image: '', blurb: '' },
 ] as Project[]
 
+// TODO: exp

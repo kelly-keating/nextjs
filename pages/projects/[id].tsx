@@ -8,6 +8,7 @@ export default function Project() {
 
   const proj = projects.find(p => p.id === id)
 
+  // TODO: use actual not found page
   if(!proj) return (
     <div className="projects_container">
       <h2>Project not found</h2>
