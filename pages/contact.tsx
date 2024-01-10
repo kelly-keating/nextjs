@@ -1,5 +1,7 @@
-import Contact from '../components/Contact'
-
 export default function contactPage() {
-  return <Contact />
+  return (
+    <div className="contact_container">
+      <h2>Contact</h2>
+    </div>
+  )
 }

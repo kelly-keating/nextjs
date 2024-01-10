@@ -17,7 +17,7 @@
     }
 
     @include lightMode {
-      filter: invert(1);
+      @include invert;
     }
   }
 
@@ -28,28 +28,4 @@
   }
 }
 
-.social_list {
-    position: absolute;
-    bottom: 0;
-    right: 0;
 
-    display: flex;
-
-  a {
-    margin: 0.5rem 0.5rem 0.5rem 0;
-  }
-}
-
-.social_icon {
-  @include lightMode {
-    filter: invert(1);
-  }
-}
-
-.version {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 1rem;
-  padding: 0.5rem;
-}

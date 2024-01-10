@@ -1,11 +1,7 @@
 import Link from "next/link"
-import { Project } from "../models/projects"
+import { projects } from "../api/hardData"
 
-interface Props {
-  projects: Project[]
-}
-
-function ProjectList({ projects }: Props) {
+function ProjectList() {
   return (
     <div>
       <h2>Notable projects I&apos;ve worked on</h2>

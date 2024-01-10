@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./home.scss";
+@import "./layout.scss";
 
 * {
   box-sizing: border-box;
@@ -19,4 +20,12 @@ body {
     background-color: white;
     color: black;
   }
+}
+
+.contact_container, .projects_container {
+  border: 5px solid white;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  width: 80vw;
 }
