@@ -4,7 +4,6 @@
   }
 }
 
-// TODO: flip to vert layout on mobile
 // TODO: center img regardless of portrait or landscape
 // TODO: flip alternating tiles
 .project_tile {
@@ -39,5 +38,9 @@
 
   img {
     max-height: 100px;
+  }
+
+  @include mobile {
+    flex-direction: column;
   }
 }
