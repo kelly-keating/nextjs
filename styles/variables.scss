@@ -32,3 +32,18 @@
   -webkit-filter: invert(1);
   filter: invert(1);
 }
+
+@mixin link-highlight {
+  a {
+    color: inherit;
+  
+    &:hover {
+      @include invert;
+      
+      background-color: black;
+      @include lightMode {
+        background-color: white;
+      }
+    }
+  }
+}

@@ -23,19 +23,6 @@ body {
   }
 }
 
-a {
-  color: inherit;
-
-  &:hover {
-    @include invert;
-    
-    background-color: black;
-    @include lightMode {
-      background-color: white;
-    }
-  }
-}
-
 .content {
   position: absolute;
   top: 30vh;

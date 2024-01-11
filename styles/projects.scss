@@ -5,6 +5,8 @@
 }
 
 .project_tile {
+  @include link-highlight;
+
   display: flex;
   justify-content: space-between;
   margin: 50px auto;

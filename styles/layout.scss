@@ -1,4 +1,6 @@
 .navbar {
+  @include link-highlight;
+
   position: fixed;
   width: 100vw;
   height: 50px;
@@ -48,16 +50,24 @@
   bottom: 0;
   right: 0;
 
-  display: flex;
-
-  a {
-    margin: 0.5rem 0.5rem 0.5rem 0;
-  }
-}
-
-.social_icon {
   @include lightMode {
     @include invert;
+  }
+
+  svg {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 32px;
+  }
+
+  a {
+    color: inherit;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+  
+    &:hover {
+      @include invert; 
+    }
   }
 }
 
