@@ -8,6 +8,10 @@
   padding: 0 3px;
   z-index: 999;
   background-color: black;
+  
+  @include lightMode {
+    background-color: white;
+  }
 
   &_logo {
     height: 20px;

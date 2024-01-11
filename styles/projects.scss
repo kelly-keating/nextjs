@@ -48,6 +48,10 @@
   text-align: center;
   background-color: lighten($color: black, $amount: 10%);
 
+  @include lightMode {
+    background-color: darken($color: white, $amount: 10%);
+  }
+
   img {
     border-radius: 2px;
     max-height: 200px;
