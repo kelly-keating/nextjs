@@ -3,3 +3,41 @@
     margin: 10px 0px;
   }
 }
+
+// TODO: flip to vert layout on mobile
+// TODO: center img regardless of portrait or landscape
+// TODO: flip alternating tiles
+.project_tile {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px;
+  border-radius: 10px;
+
+  background-color: black;
+  border: 3px solid white;
+  filter: drop-shadow(white 0px 0px 3px);
+
+  @include lightMode {
+    background-color: white;
+    border: 3px solid black;
+    filter: drop-shadow(black 0px 0px 3px);
+  }
+
+  a {
+    color: inherit;
+    background-color: black;
+
+    @include lightMode {
+      background-color: white;
+    }
+
+    &:hover {
+      @include invert;
+    }
+  }
+
+  img {
+    max-height: 100px;
+  }
+}

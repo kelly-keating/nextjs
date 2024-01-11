@@ -12,8 +12,14 @@ function ProjectList() {
       <p>Here&apos;s some projects I&apos;ve worked on:</p>
 
       {projects.map(p => (
-        <div key={p.id}>
-          <h3><Link href={'/projects/' + p.id}>{p.name}</Link></h3>
+        <div key={p.id} className='project_tile'>
+          <div>
+            <h3><Link href={'/projects/' + p.id}>{p.name}</Link></h3>
+            <p>{p.blurb}</p>
+          </div>
+          <div>
+            <img src={p.image || 'gitmaster_home.png'} alt={'Screenshot of ' + p.name} />
+          </div>
         </div>
       ))}
     </div>

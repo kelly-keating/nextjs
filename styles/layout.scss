@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 999;
+  background-color: black;
 
   &_logo {
     height: 20px;
@@ -48,7 +50,7 @@
 }
 
 .social_list {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
 
@@ -66,7 +68,7 @@
 }
 
 .version {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   font-size: 1rem;
