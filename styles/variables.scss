@@ -10,6 +10,12 @@
   }
 }
 
+@mixin not-mobile {
+  @media (min-width: 701px) {
+    @content;
+  }
+}
+
 @mixin lightMode {
   @media (prefers-color-scheme: light) {
     @content;

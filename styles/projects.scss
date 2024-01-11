@@ -4,8 +4,6 @@
   }
 }
 
-// TODO: center img regardless of portrait or landscape
-// TODO: flip alternating tiles
 .project_tile {
   display: flex;
   justify-content: space-between;
@@ -36,11 +34,52 @@
     }
   }
 
-  img {
-    max-height: 100px;
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+  
+  @include not-mobile {    
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.project_tile__blurb {
+  @include not-mobile {
+    width: calc(65vw - 200px);
+    margin: 5px auto;
   }
 
   @include mobile {
-    flex-direction: column;
+    padding: 5px;
+  }
+}
+
+.project_tile__thumb {
+  width: 200px;
+  text-align: center;
+  background-color: lighten($color: black, $amount: 10%);
+
+  img {
+    border-radius: 2px;
+    max-height: 200px;
+    max-width: 200px;
+
+    @include not-mobile {
+      //TODO: fix landscape vert centering on desktop 
+    }
+  }
+
+
+  @include mobile {
+    width: 100%;
+    min-height: 100%;
+    vertical-align: middle;
+
+    img {
+    max-width: 100%;
+
+    }
   }
 }
