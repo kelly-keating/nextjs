@@ -1,18 +1,15 @@
 import { useRouter } from "next/router"
 import { projects } from "../../api/hardData"
 
+import Page404 from "../404"
+
 export default function Project() {
   const router = useRouter()
   const id = router.query.id
 
   const proj = projects.find(p => p.id === id)
 
-  // TODO: use actual not found page
-  if(!proj) return (
-    <div className="projects_container">
-      <h2>Project not found</h2>
-    </div>
-  )
+  if(!proj) return <Page404 />
 
   return (
     <div className="projects_container">

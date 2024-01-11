@@ -43,3 +43,46 @@ body {
     }
   }
 }
+
+// TODO: check if next really needs all these or if we can simplify
+.error_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error_box {
+  line-height: 48px;
+
+  &__left {
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+    padding-right: 23px;
+    font-size: 24px;
+    font-weight: 500;
+    vertical-align: top;
+    border-right: 1px solid rgba(255,255,255,.3);
+
+    @include light-mode {
+      border-right: 1px solid rgba(0,0,0,.3);
+    }
+  }
+  
+  &__right {
+    display: inline-block;
+
+    h2 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}
