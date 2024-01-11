@@ -11,7 +11,7 @@
   z-index: 999;
   background-color: black;
   
-  @include lightMode {
+  @include light-mode {
     background-color: white;
   }
 
@@ -19,7 +19,7 @@
     height: 20px;
     margin: 10px;
     
-    @include lightMode {
+    @include light-mode {
       @include invert;
     }
   }
@@ -50,7 +50,7 @@
   bottom: 0;
   right: 0;
 
-  @include lightMode {
+  @include light-mode {
     @include invert;
   }
 

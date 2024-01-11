@@ -16,7 +16,7 @@
       width: 90vw;
     }
 
-    @include lightMode {
+    @include light-mode {
       @include invert;
     }
   }

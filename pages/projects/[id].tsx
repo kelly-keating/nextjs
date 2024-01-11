@@ -1,5 +1,4 @@
 import { useRouter } from "next/router"
-
 import { projects } from "../../api/hardData"
 
 export default function Project() {

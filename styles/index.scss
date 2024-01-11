@@ -17,7 +17,7 @@ body {
   background-color: black;
   color: white;
 
-  @include lightMode {
+  @include light-mode {
     background-color: white;
     color: black;
   }
@@ -38,7 +38,7 @@ body {
     margin-bottom: 1rem;
     border-bottom: 3px solid white;
 
-    @include lightMode {
+    @include light-mode {
       border-bottom: 3px solid black;
     }
   }

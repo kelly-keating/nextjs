@@ -17,7 +17,7 @@
   border: 3px solid white;
   filter: drop-shadow(white 0px 0px 3px);
 
-  @include lightMode {
+  @include light-mode {
     background-color: white;
     border: 3px solid black;
     filter: drop-shadow(black 0px 0px 3px);
@@ -50,7 +50,7 @@
   text-align: center;
   background-color: lighten($color: black, $amount: 10%);
 
-  @include lightMode {
+  @include light-mode {
     background-color: darken($color: white, $amount: 10%);
   }
 
@@ -63,7 +63,6 @@
       //TODO: fix landscape vert centering on desktop 
     }
   }
-
 
   @include mobile {
     width: 100%;

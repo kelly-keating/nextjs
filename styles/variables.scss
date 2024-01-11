@@ -22,7 +22,7 @@
   }
 }
 
-@mixin lightMode {
+@mixin light-mode {
   @media (prefers-color-scheme: light) {
     @content;
   }
@@ -41,7 +41,7 @@
       @include invert;
       
       background-color: black;
-      @include lightMode {
+      @include light-mode {
         background-color: white;
       }
     }
