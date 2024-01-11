@@ -7,7 +7,7 @@
 .project_tile {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0px;
+  margin: 50px auto;
   padding: 10px;
   border-radius: 10px;
 
@@ -19,19 +19,6 @@
     background-color: white;
     border: 3px solid black;
     filter: drop-shadow(black 0px 0px 3px);
-  }
-
-  a {
-    color: inherit;
-    background-color: black;
-
-    @include lightMode {
-      background-color: white;
-    }
-
-    &:hover {
-      @include invert;
-    }
   }
 
   @include mobile {
@@ -78,8 +65,7 @@
     vertical-align: middle;
 
     img {
-    max-width: 100%;
-
+      max-width: 100%;
     }
   }
 }

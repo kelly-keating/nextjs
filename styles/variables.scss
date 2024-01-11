@@ -10,6 +10,12 @@
   }
 }
 
+@mixin desktop-xxl {
+  @media (min-width: 1801px) {
+    @content;
+  }
+}
+
 @mixin not-mobile {
   @media (min-width: 701px) {
     @content;

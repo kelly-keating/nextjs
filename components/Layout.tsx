@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 import Footer from './Footer'
 import Header from './Header'
@@ -7,6 +8,8 @@ import Header from './Header'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Layout({ children }) {
+  const { pathname } = useRouter()
+
   return (
     <div className={inter.className}>
       <Head>
@@ -16,7 +19,9 @@ export default function Layout({ children }) {
 
       <Header/>
       <main>
-        {children}
+        <div className={pathname === "/" ? "" : "content"}>
+          {children}
+        </div>
       </main>
       <Footer />
     </div>
