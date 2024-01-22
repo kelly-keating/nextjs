@@ -12,6 +12,11 @@ function Projects() {
         <p>All this to say you&apos;ll be hard pressed to find something finished here - haha!</p>
         <p>Here&apos;s some projects I&apos;ve worked on:</p>
 
+        <div id="proj_alert">
+          <p>If you&apos;re seeing this message, I&apos;m working on this page right now! Hello :)</p>
+          <p>Forgive the temporary stand ins 😊</p>
+        </div>
+
         {projects.map(p => (
           <div key={p.id} className='project_tile'>
             <div className='project_tile__blurb'>
