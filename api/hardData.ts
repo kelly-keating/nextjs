@@ -19,13 +19,13 @@ export const projects: Project[] = [
       tech[2],
     ],
   },
-  { id: 'video-feeder', name: 'video feeder', image: '',
-    blurb: 'After growing tired of missing youtube uploads I want to watch (or having to scroll through those I don\'t), I created a site that would let me track my subscriptions, sort and delete videos to my heart\'s content.',
+  { id: 'video-feeder', name: 'video feeder', image: 'video_feeder.png',
+    blurb: 'After growing tired of missing youtube uploads I want to watch (or having to scroll through those I don\'t), I created a site that would let me track my subscriptions, sort, and delete videos to my heart\'s content.',
     details: '',
     tech: [],
   },
-  { id: 'watchr', name: 'watchr', image: '',
-    blurb: 'A site to easily add TV shows and movies recommended by others. Never forgot what you wanted to watch again! ',
+  { id: 'watchr', name: 'watchr', image: 'watchr.png',
+    blurb: 'A site to easily add TV shows and movies recommended by others. Never forget what you wanted to watch again! ',
     details: '',
     tech: [],
   },
@@ -45,6 +45,9 @@ export const projects: Project[] = [
     tech: [],
   },  
 ]
+// cozy game club
+// run tracker
+// come watch with me
 
 // TODO: fill out exp
 export const experience: Exp[] = [
