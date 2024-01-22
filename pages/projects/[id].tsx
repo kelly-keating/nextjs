@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import { projects } from "../../api/hardData"
 
 import Page404 from "../404"
+import InProgress from "../../components/InProgress"
 
 export default function Project() {
   const router = useRouter()
@@ -14,6 +15,8 @@ export default function Project() {
   return (
     <div className="projects_container">
       <h2>{proj.name}</h2>
+
+      <InProgress />
     </div>
   )
 }

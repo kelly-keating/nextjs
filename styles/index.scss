@@ -86,3 +86,21 @@ body {
     }
   }
 }
+
+// ----- TEMP - TODO: DELETE THIS -----
+
+#in_prog_alert {
+  padding: 25px;
+  border-radius: 10px;
+  margin: 50px;
+
+  color: black;
+  background-color: white;
+
+  @include light-mode {
+    color: white;
+    background-color: black;
+  }
+}
+
+// ----------------
