@@ -12,7 +12,7 @@ export const tech:Tech[] = [
 //  TODO: fill out project blurbs
 export const projects: Project[] = [
   { id: 'gitmaster', name: 'gitmaster', image: 'gitmaster_home.png',
-    blurb: 'Point and click',
+    blurb: 'A point and click puzzle game I made with a couple people years ago. While not the biggest game, it was the first time using react to make something other than a website.',
     details: 'Final Proj',
     tech: [
       tech[1],
@@ -20,17 +20,17 @@ export const projects: Project[] = [
     ],
   },
   { id: 'video-feeder', name: 'video feeder', image: '',
-    blurb: '',
+    blurb: 'After growing tired of missing youtube uploads I want to watch (or having to scroll through those I don\'t), I created a site that would let me track my subscriptions, sort and delete videos to my heart\'s content.',
     details: '',
     tech: [],
   },
   { id: 'watchr', name: 'watchr', image: '',
-    blurb: '',
+    blurb: 'A site to easily add TV shows and movies recommended by others. Never forgot what you wanted to watch again! ',
     details: '',
     tech: [],
   },
   { id: 'easy-budget', name: 'easy-budget', image: '',
-    blurb: '',
+    blurb: 'We currently either rely on banks to create integrated tools to help us track our budgets or most free tools are just glorified spreadsheets without helpful tooling. I created this tool to help make parsing my csv files easier and see where my money disappears off to :P',
     details: '',
     tech: [],
   },
@@ -39,6 +39,11 @@ export const projects: Project[] = [
     details: '',
     tech: [],
   },
+  { id: 'this-site', name: 'kelly-keating.com', image: '',
+    blurb: '',
+    details: '',
+    tech: [],
+  },  
 ]
 
 // TODO: fill out exp

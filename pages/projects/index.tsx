@@ -20,7 +20,7 @@ function Projects() {
           <div key={p.id} className='project_tile'>
             <div className='project_tile__blurb'>
               <h3><Link href={'/projects/' + p.id}>{p.name}</Link></h3>
-              <p>{p.blurb.repeat(30)}</p>
+              <p>{p.blurb}</p>
             </div>
             <div className='project_tile__thumb'>
               <img src={p.image || 'https://live.staticflickr.com/5554/15095993931_9381ac76e9_b.jpg'} alt={'Screenshot of ' + p.name} />
