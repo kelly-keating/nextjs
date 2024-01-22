@@ -1,12 +1,19 @@
 import { Exp, Project, Tech } from "../models/projects"
 
 export const tech:Tech[] = [
-  { id: 1, text: 'Auth0', color: '' },
+  { id: 0, text: 'Auth0', color: '' },
   { id: 1, text: 'React', color: '#e60000' },
-  { id: 1, text: 'Redux', color: '#6600cc' },
-  { id: 1, text: 'SQLite', color: '' },
-  { id: 1, text: 'Firebase', color: '' },
-  { id: 1, text: 'SCSS', color: '' },
+  { id: 2, text: 'Redux', color: '#6600cc' },
+  { id: 3, text: 'SQLite', color: '' },
+  { id: 4, text: 'External API', color: '' },
+  { id: 5, text: 'SCSS', color: '' },
+  { id: 6, text: 'Firebase Hosting', color: '' },
+  { id: 7, text: 'Firebase Auth', color: '' },
+  { id: 8, text: 'Firebase Realtime Database', color: '' },
+  { id: 9, text: 'Next.JS', color: '' },
+  { id: 10, text: 'TS', color: '' },
+  { id: 11, text: 'localStorage', color: '' },
+  { id: 12, text: 'Chakra UI', color: '' },
 ]
 
 //  TODO: fill out project blurbs
@@ -18,21 +25,46 @@ export const projects: Project[] = [
       tech[1],
       tech[2],
     ],
+    url_github: 'https://github.com/pushmeproductions/gitmaster',
   },
   { id: 'video-feeder', name: 'video feeder', image: 'video_feeder.png',
     blurb: 'After growing tired of missing youtube uploads I want to watch (or having to scroll through those I don\'t), I created a site that would let me track my subscriptions, sort, and delete videos to my heart\'s content.',
     details: '',
-    tech: [],
+    tech: [
+      tech[1],
+      tech[2],
+      tech[12],
+      tech[5],
+      tech[4],
+      tech[7],
+      tech[8],
+    ],
+    url_github: 'https://github.com/kelly-keating/video-feeder',
   },
   { id: 'watchr', name: 'watchr', image: 'watchr.png',
     blurb: 'A site to easily add TV shows and movies recommended by others. Never forget what you wanted to watch again! ',
     details: '',
-    tech: [],
+    tech: [
+      tech[1],
+      tech[2],
+      tech[6],
+      tech[7],
+      tech[8],
+      tech[5],
+      tech[4],
+    ],
+    url_github: 'https://github.com/kelly-keating/watchr',
+    url_deploy: 'https://watchr-without-an-e.firebaseapp.com/',
   },
   { id: 'easy-budget', name: 'easy-budget', image: '',
     blurb: 'We currently either rely on banks to create integrated tools to help us track our budgets or most free tools are just glorified spreadsheets without helpful tooling. I created this tool to help make parsing my csv files easier and see where my money disappears off to :P',
     details: '',
-    tech: [],
+    tech: [
+      tech[1],
+      tech[11],
+      tech[10],
+    ],
+    url_github: 'https://github.com/kelly-keating/easy-budget'
   },
   { id: 'curriculum', name: 'curriculum', image: '',
     blurb: '',
@@ -43,7 +75,16 @@ export const projects: Project[] = [
     blurb: '',
     details: '',
     tech: [],
-  },  
+  },
+  { id: 'retro-neon-grid-react', name: 'Retro Grid Node Module', image: 'retro_grid_npm.png',
+    blurb: ' A node module I created and deployed to npm. Creates a sweet customisable grid for your react project.',
+    details: '',
+    tech: [
+      tech[1]
+    ],
+    url_github: 'https://github.com/kelly-keating/retro-neon-grid-react',
+    url_npm: 'https://www.npmjs.com/package/retro-neon-grid-react',
+  },
 ]
 // cozy game club
 // run tracker
