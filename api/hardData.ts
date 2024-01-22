@@ -45,3 +45,5 @@ export const projects: Project[] = [
 export const experience: Exp[] = [
   { id: '', logo: '', company: '', title: '',  blurb: '', resps: [] },
 ]
+
+// TODO: add reference docs. Hard pages or contentful?
