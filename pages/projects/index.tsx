@@ -23,7 +23,7 @@ function Projects() {
               <p>{p.blurb}</p>
             </div>
             <div className='project_tile__thumb'>
-              <img src={p.image || 'https://live.staticflickr.com/5554/15095993931_9381ac76e9_b.jpg'} alt={'Screenshot of ' + p.name} />
+              <img src={p.image ? '/projects/' + p.image : 'https://live.staticflickr.com/5554/15095993931_9381ac76e9_b.jpg'} alt={'Screenshot of ' + p.name} />
             </div>
           </div>
         ))}

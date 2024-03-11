@@ -44,7 +44,7 @@ export default function Project() {
         {tags}
       </div>
       <div>
-        <img className="project_display" src={proj.image} />
+        <img className="project_display" src={'/projects/' + proj.image} />
       </div>
       <div>{proj.details}</div>
     </div>

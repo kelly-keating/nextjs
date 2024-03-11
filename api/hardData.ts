@@ -18,7 +18,7 @@ export const tech:Tech[] = [
 
 //  TODO: fill out project blurbs
 export const projects: Project[] = [
-  { id: 'gitmaster', name: 'gitmaster', image: '/gitmaster_home.png',
+  { id: 'gitmaster', name: 'gitmaster', image: 'gitmaster_home.png',
     blurb: 'A point and click puzzle game I made with a couple people years ago. While not the biggest game, it was the first time using react to make something other than a website.',
     details: 'Final Proj',
     tech: [
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     ],
     url_github: 'https://github.com/pushmeproductions/gitmaster',
   },
-  { id: 'video-feeder', name: 'video feeder', image: '/video_feeder.png',
+  { id: 'video-feeder', name: 'video feeder', image: 'video_feeder.png',
     blurb: 'After growing tired of missing youtube uploads I want to watch (or having to scroll through those I don\'t), I created a site that would let me track my subscriptions, sort, and delete videos to my heart\'s content.',
     details: '',
     tech: [
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     ],
     url_github: 'https://github.com/kelly-keating/video-feeder',
   },
-  { id: 'watchr', name: 'watchr', image: '/watchr.png',
+  { id: 'watchr', name: 'watchr', image: 'watchr.png',
     blurb: 'A site to easily add TV shows and movies recommended by others. Never forget what you wanted to watch again! ',
     details: '',
     tech: [
