@@ -50,3 +50,5 @@ export default function Project() {
     </div>
   )
 }
+
+// TODO: getStaticPaths

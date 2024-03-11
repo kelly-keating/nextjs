@@ -14,6 +14,7 @@ function Header() {
       <nav>
         <ul>
           {pathname !== '/' && <li><Link className="navbar_link" href='/'>Home</Link></li>}
+          <li><Link className={(pathname === '/docs' || pathname === '/docs/[fileName]') ? "navbar_link current" : "navbar_link"} href='/docs'>Docs</Link></li>
           <li><Link className={(pathname === '/projects' || pathname === '/projects/[id]') ? "navbar_link current" : "navbar_link"} href='/projects'>Projects</Link></li>
           <li><Link className={pathname === '/about' ? "navbar_link current" : "navbar_link"} href='/about'>About Me</Link></li>
         </ul> 
