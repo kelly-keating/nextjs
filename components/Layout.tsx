@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
+import BackButton from './BackButton'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -20,6 +21,7 @@ export default function Layout({ children }) {
       <Header/>
       <main>
         <div className={pathname === "/" ? "" : "content"}>
+          {pathname !== "/" && <BackButton />}
           {children}
         </div>
       </main>
