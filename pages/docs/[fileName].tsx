@@ -2,12 +2,9 @@ import Markdown from 'react-markdown'
 import { getFileContent, getFileNames } from "../../api/docs"
 
 function Doc({ fileContents, fileName }) {
-  console.log(fileContents)
-
   return (
     <div className="docs_container">
-      <h3>{fileName}</h3>
-      <div>
+      <div className="markdown_container">
     	  <Markdown>{fileContents}</Markdown>
       </div>
     </div>
