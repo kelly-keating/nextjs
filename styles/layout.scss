@@ -1,13 +1,16 @@
 .navbar {
+  $nav-height: 46px;
+  $nav-padding: 3px;
+
   @include link-highlight;
 
   position: fixed;
   width: 100vw;
-  height: 50px;
+  height: $nav-height;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3px;
+  padding: 0 $nav-padding;
   z-index: 999;
   background-color: black;
   
@@ -18,6 +21,11 @@
   &_logo {
     height: 20px;
     margin: 10px;
+    border-radius: 2px;
+
+    &__link {
+      height: 40px;
+    }
     
     @include light-mode {
       @include invert;
@@ -28,19 +36,24 @@
     margin: 0 0 0 auto;
   }
 
+  a {
+    border-radius: 2px;
+  }
+
   ul {
     display: flex;
     list-style-type: none;
   
     a {
       text-decoration: none;
-      margin: 5px;
-      padding: 5px;
-      border-radius: 5px;
+      padding: 0 10px;
+      display: inline-block;
+      line-height: calc($nav-height - (2 * $nav-padding));
     }
 
     .current {
       opacity: 50%;
+      text-decoration: underline;
     }
   }
 }
@@ -51,13 +64,15 @@
   margin-right: 20px;
   padding: 5px;
 
+  height: 46px;
+  width: 46px;
   display: flex;
   flex-direction: column;
 
   background-color: black;
   color: white;
   border: none;
-  transition-duration: 0.4s;
+  border-radius: 2px;
 
   svg {
     width: 100%;
@@ -65,10 +80,22 @@
   }
 
   &:hover {
-    @include invert;
+    background-color: white;
+    color: black;
+
   }
 
-  // TODO: lightmode & check arrow size
+  
+  @include light-mode {
+    background-color: white;
+    color: black;
+
+    
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
 }
 
 .social_list {
@@ -84,7 +111,7 @@
     height: 50px;
     width: 50px;
     background-color: black;
-    border-radius: 32px;
+    border-radius: 2px;
   }
 
   a {

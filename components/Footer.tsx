@@ -48,7 +48,7 @@ function Footer() {
         </a>
       </div>
       <div className="version">
-        <p>v0.0.5</p>
+        <p>v0.0.6</p>
       </div>
     </footer>
   )

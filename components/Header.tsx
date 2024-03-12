@@ -8,7 +8,7 @@ function Header() {
   
   return (
     <header className="navbar">
-      {pathname !== '/' && <Link href="/"><Name className="navbar_logo" /></Link>}
+      {pathname !== '/' && <Link className="navbar_logo__link" href="/"><Name className="navbar_logo" /></Link>}
 
       {/* TODO: Burger on mobile */}
       <nav>
