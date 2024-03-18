@@ -19,17 +19,18 @@ export default function Project({ proj }: Props) {
     )) || null
 
   if(!proj) return <Page404 />
-  if(!proj.details) return (
-    <div className="projects_container">
-      <h2>{proj.name}</h2>
-      <InProgress />
-    </div>
-  )
+  // if(!proj.details) return (
+  //   <div className="projects_container">
+  //     <h2>{proj.name}</h2>
+  //     <InProgress />
+  //   </div>
+  // )
 
   return (
     <div className="projects_container">
       <div className="project_header">
         <h2>{proj.name}</h2>
+        <InProgress />
         <div>
           {proj.url_deploy && <SocialIcon site="default" url={proj.url_deploy} />}
           {proj.url_npm && <SocialIcon site="npm" url={proj.url_npm} />}

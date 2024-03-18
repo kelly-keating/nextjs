@@ -13,15 +13,13 @@ function Projects() {
         <p>Aside from that, I have way too many projects that I&apos;ve started because I can see something that could be a little more efficient or a little more helpful. So much of our time online is spent on sites that may not have the same interests as us, or are made for more general purposes that aren&apos;t fitting our specific needs. Having the skills to do something about it yourself is so rewarding.</p>
         <p>All this to say you&apos;ll be hard pressed to find something finished here - haha!</p>
         <p>Here&apos;s some projects I&apos;ve worked on:</p>
-
-        <InProgress />
-
         {projects.map(p => (
           <div key={p.id} className='project_tile'>
             <div className='project_tile__blurb'>
               <h3><Link href={'/projects/' + p.id}>{p.name}</Link></h3>
               <p>{p.blurb}</p>
             </div>
+            {/* BUG: WHY is there a gap between bottom of image and box??? */}
             <div className='project_tile__thumb'>
               <img src={p.image ? '/projects/' + p.image : 'https://live.staticflickr.com/5554/15095993931_9381ac76e9_b.jpg'} alt={'Screenshot of ' + p.name} />
             </div>
