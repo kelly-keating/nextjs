@@ -14,6 +14,7 @@ export const tech:Tech[] = [
   { id: 10, text: 'TS', color: '' },
   { id: 11, text: 'localStorage', color: '' },
   { id: 12, text: 'Chakra UI', color: '' },
+  { id: 13, text: 'Custom Modules', color: '' },
 ]
 
 //  TODO: fill out project blurbs
@@ -69,22 +70,51 @@ export const projects: Project[] = [
   { id: 'curriculum', name: 'curriculum', image: '',
     blurb: '',
     details: '',
-    tech: [],
+    tech: [
+      tech[0],
+      tech[1],
+      tech[2],
+      tech[3],
+      tech[4],
+      tech[5],
+      tech[10],
+      tech[11],
+    ],
   },
   { id: 'this-site', name: 'kelly-keating.com', image: '',
     blurb: '',
     details: '',
-    tech: [],
+    tech: [
+      tech[1],
+      tech[5],
+      tech[9],
+      tech[10],
+    ],
   },
   { id: 'retro-neon-grid-react', name: 'Retro Grid Node Module', image: 'retro_grid_npm.png',
     blurb: ' A node module I created and deployed to npm. Creates a sweet customisable grid for your react project.',
     details: '',
     tech: [
-      tech[1]
+      tech[1],
+      tech[13],
     ],
     url_github: 'https://github.com/kelly-keating/retro-neon-grid-react',
     url_npm: 'https://www.npmjs.com/package/retro-neon-grid-react',
   },
+  { id: 'magic-awaaaay', name: 'MTG Card Library', image: '',
+    blurb: '',
+    details: '',
+    tech: [
+      tech[0],
+      tech[1],
+      tech[3],
+      tech[4],
+      tech[10],
+      tech[12],
+    ],
+    url_github: 'https://github.com/kelly-keating/magic-awaaaay',
+    url_deploy: 'https://magic-awaaaay.vercel.app/',
+  }
 ]
 // cozy game club
 // run tracker

@@ -1,17 +1,15 @@
-import { Tech } from "../../models/projects"
-import { useRouter } from "next/router"
-import { projects, tech } from "../../api/hardData"
+import { projects } from "../../api/hardData"
+import { Project } from "../../models/projects"
 
 import Page404 from "../404"
 import InProgress from "../../components/InProgress"
-import { useMemo } from "react"
+import SocialIcon from "../../components/SocialIcon"
 
-export default function Project() {
-  const router = useRouter()
-  const id = router.query.id
+interface Props {
+  proj: Project
+}
 
-  const proj = projects.find(p => p.id === id)
-  // TODO: sort tag style (plus bright/dark)
+export default function Project({ proj }: Props) {
   const tags = proj?.tech.map((tech) => (
       <div key={tech.id} style={{
         color: tech.color || "aqua",
@@ -28,15 +26,14 @@ export default function Project() {
     </div>
   )
 
-  // TODO: add back button
   return (
     <div className="projects_container">
       <div className="project_header">
         <h2>{proj.name}</h2>
         <div>
-          {proj.url_deploy && <p>site link</p>}
-          {proj.url_npm && <p>npm link</p>}
-          {proj.url_github && <p>github link</p>}
+          {proj.url_deploy && <SocialIcon site="default" url={proj.url_deploy} />}
+          {proj.url_npm && <SocialIcon site="npm" url={proj.url_npm} />}
+          {proj.url_github && <SocialIcon site="github" url={proj.url_github} />}
         </div>
       </div>
       <div>
@@ -44,11 +41,25 @@ export default function Project() {
         {tags}
       </div>
       <div>
-        <img className="project_display" src={'/projects/' + proj.image} />
+        <img className="project_display" src={'/projects/' + proj.image} alt={'Screenshot of ' + proj.name}/>
       </div>
       <div>{proj.details}</div>
     </div>
   )
 }
 
-// TODO: getStaticPaths
+export function getStaticPaths() {
+  const paths = projects.map((proj) => ({
+      params: { id: proj.id },
+  }))
+  return  { paths, fallback: false }
+}
+
+export function getStaticProps({ params }) {
+  const { id } = params
+  const proj = projects.find(p => p.id === id)
+  return { props: {
+    proj
+  }}
+}
+
