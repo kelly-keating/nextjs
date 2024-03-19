@@ -25,3 +25,5 @@ In this case we can make use of aria roles and labels:
 ```
 
 This means screen readers will name that this is specifically an image (rather than text content) and give its label description. Not all emojis need this, but it can be helpful when treating them like stand-alone images to make sure they will be interpreted as such by all users.
+
+<!-- TODO: display none vs render off screen -->

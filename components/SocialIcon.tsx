@@ -31,6 +31,7 @@ interface Props {
   url: string
 }
 
+// TODO: target="_blank" but only on cpus?
 function SocialIcon({ site, url }: Props) {
   return (
     <a href={url} className="social_icon">
