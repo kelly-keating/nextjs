@@ -1,3 +1,15 @@
+.docs_container {
+  @include link-highlight;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .doc_tile {
+    margin: 5px 0;
+  }
+}
+
 .markdown_container {
   * {
     margin-bottom: 10px;
