@@ -10,10 +10,9 @@ interface Props {
 }
 
 export default function Project({ proj }: Props) {
+  // TODO: dynamically color tags based on tech
   const tags = proj?.tech.map((tech) => (
-      <div key={tech.id} style={{
-        color: tech.color || "aqua",
-      }}>
+      <div key={tech.id} className="tech_tag">
         <p>{tech.text}</p>
       </div>
     )) || null
@@ -36,10 +35,10 @@ export default function Project({ proj }: Props) {
           {proj.url_npm && <SocialIcon site="npm" url={proj.url_npm} />}
         </div>
       </div>
-      <div>
-        <p>{proj.blurb}</p>
+      <div className="tech_tag__container">
         {tags}
       </div>
+      <p>{proj.blurb}</p>
       <div>
         <img className="project_display" src={'/projects/' + proj.image} alt={'Screenshot of ' + proj.name}/>
       </div>

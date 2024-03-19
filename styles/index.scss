@@ -90,23 +90,29 @@ body {
 }
 
 .social_icon {
-  @include light-mode {
-    @include invert;
-  }
-
   color: inherit;
   margin: 0.5rem 0.5rem 0.5rem 0;
-
-  &:hover {
-    @include invert; 
-  }
-
+  
   svg {
     height: 50px;
     width: 50px;
     background-color: black;
     border-radius: 2px;
-  }  
+  }
+
+  &:hover {
+    @include invert;
+  }
+
+  @include light-mode {
+    @include invert;
+
+    &:hover {
+      svg {
+        @include invert;
+      }
+    }
+  }
 }
 
 // ----- TEMP - TODO: DELETE THIS -----

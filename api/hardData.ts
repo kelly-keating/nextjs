@@ -11,7 +11,7 @@ export const tech:Tech[] = [
   { id: 7, text: 'Firebase Auth', color: '' },
   { id: 8, text: 'Firebase Realtime Database', color: '' },
   { id: 9, text: 'Next.JS', color: '' },
-  { id: 10, text: 'TS', color: '' },
+  { id: 10, text: 'TypeScript', color: '' },
   { id: 11, text: 'localStorage', color: '' },
   { id: 12, text: 'Chakra UI', color: '' },
   { id: 13, text: 'Custom Modules', color: '' },

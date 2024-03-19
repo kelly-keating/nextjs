@@ -81,17 +81,32 @@
   max-width: 300px;
 }
 
-.project_header {
-  display: flex;
-}
-
 .project_header__socials {
   position: fixed;
   right: 85vw;
   margin-right: 20px;
-  margin-top: 60px;
+  margin-top: 5px;
   height: 46px;
   width: 46px;
   display: flex;
   flex-direction: column;
+}
+
+.tech_tag {
+  &__container {
+    display: flex;
+  }
+
+  padding: 0 5px;
+  margin-right: 5px;
+  line-height: 0px;
+  border-radius: 2px;
+  font-size: small;
+  background-color: #eee;
+  color: #111;
+  font-weight: bold;
+
+  @include light-mode {
+    @include invert;
+  }
 }
