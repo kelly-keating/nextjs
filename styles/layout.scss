@@ -102,26 +102,6 @@
   position: fixed;
   bottom: 0;
   right: 0;
-
-  @include light-mode {
-    @include invert;
-  }
-
-  svg {
-    height: 50px;
-    width: 50px;
-    background-color: black;
-    border-radius: 2px;
-  }
-
-  a {
-    color: inherit;
-    margin: 0.5rem 0.5rem 0.5rem 0;
-  
-    &:hover {
-      @include invert; 
-    }
-  }
 }
 
 .version {

@@ -30,11 +30,10 @@ export default function Project({ proj }: Props) {
     <div className="projects_container">
       <div className="project_header">
         <h2>{proj.name}</h2>
-        <InProgress />
-        <div>
+        <div className="project_header__socials">
+          {proj.url_github && <SocialIcon site="github" url={proj.url_github} />}
           {proj.url_deploy && <SocialIcon site="default" url={proj.url_deploy} />}
           {proj.url_npm && <SocialIcon site="npm" url={proj.url_npm} />}
-          {proj.url_github && <SocialIcon site="github" url={proj.url_github} />}
         </div>
       </div>
       <div>
