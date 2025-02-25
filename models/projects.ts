@@ -3,7 +3,7 @@ export interface Project {
   name: string
   image: string
   blurb: string
-  details: string
+  details: string[]
   tech: Tech[]
   url_deploy?: string
   url_github?: string
@@ -22,5 +22,5 @@ export interface Exp {
   company: string
   title: string
   blurb: string
-  resps: string[]  
+  resps: string[]
 }
