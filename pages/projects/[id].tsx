@@ -1,5 +1,5 @@
 import { projects } from '../../api/hardData'
-import { Project } from '../../models/projects'
+import type { Project } from '../../models/projects'
 
 import Page404 from '../404'
 import InProgress from '../../components/InProgress'
