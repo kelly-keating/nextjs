@@ -4,7 +4,7 @@ export default function aboutPage() {
       <h2>About</h2>
       <p>Hi I&apos;m Kelly!</p>
       <p>
-        I&apos;m a software engineer with a passion for building scalable and
+        I&apos;m a software developer with a passion for building scalable and
         efficient systems. I have a strong background in full-stack development,
         specializing in TypeScript, React and Node.js. I enjoy tackling complex
         problems and finding innovative solutions. In my free time I love
@@ -36,11 +36,11 @@ export default function aboutPage() {
         it.
       </p>
       <p>
-        Having said that, I am absolutely a software engineer with a passion for
-        building scalable and efficient systems who is looking for new
+        Having said that, I am absolutely a software developer with a passion
+        for building scalable and efficient systems who is looking for new
         challenges and opportunities to grow my skills, so if you&apos;re
-        looking for a software engineer who is passionate about building good
-        things with great people, hit me up!
+        looking for a dev who is passionate about building good things with
+        great people, hit me up!
       </p>
       <p></p>
 
@@ -51,13 +51,18 @@ export default function aboutPage() {
           <a
             href='https://www.linkedin.com/in/kelly-keating-nz'
             target='_blank'
+            className='link-pop'
           >
             kelly-keating-nz
           </a>
         </p>
         <p>
           GitHub:{' '}
-          <a href='https://github.com/kelly-keating' target='_blank'>
+          <a
+            href='https://github.com/kelly-keating'
+            target='_blank'
+            className='link-pop'
+          >
             kelly-keating
           </a>
         </p>

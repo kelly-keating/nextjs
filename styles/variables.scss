@@ -39,6 +39,7 @@
 
     &:hover {
       @include invert;
+      text-decoration: underline;
 
       background-color: black;
       @include light-mode {
