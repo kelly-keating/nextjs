@@ -50,6 +50,26 @@ body {
   }
 }
 
+// ----- GLOBAL STYLES -----.
+
+a {
+  color: #d87430;
+
+  &:hover {
+    color: #f0b98c;
+  }
+
+  @include light-mode {
+    color: #712fb0;
+
+    &:hover {
+      color: #a780be;
+    }
+  }
+}
+
+// ----- UTIL STYLES -----
+
 // TODO: check if next really needs all these or if we can simplify
 .error_container {
   position: fixed;
