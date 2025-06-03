@@ -1,5 +1,5 @@
-import { readdir, readFile } from "fs/promises"
-import path from "path"
+import { readdir, readFile } from 'fs/promises'
+import path from 'path'
 
 export async function getFileNames(): Promise<string[]> {
   const dir = path.join(process.cwd(), 'public/markdown')

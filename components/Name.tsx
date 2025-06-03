@@ -3,17 +3,17 @@ interface Props {
   fill?: string
 }
 
-function Name({ className = "", fill = 'white' }: Props) {
+function Name({ className = '', fill = 'white' }: Props) {
   return (
     <svg
       className={className}
-      role="img"
-      aria-label="Kelly Keating"
+      role='img'
+      aria-label='Kelly Keating'
       xmlns='http://www.w3.org/2000/svg'
       version='1.1'
       xmlnsXlink='http://www.w3.org/1999/xlink'
-      viewBox="0 0 1628 143"
-    >  
+      viewBox='0 0 1628 143'
+    >
       <title>Kelly Keating</title>
       <g>
         <path

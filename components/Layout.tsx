@@ -15,13 +15,16 @@ export default function Layout({ children }) {
     <div className={inter.className}>
       <Head>
         <title>Kelly Keating</title>
-        <meta name="description" content="Personal page of the amazing web developer Kelly Keating" />
+        <meta
+          name='description'
+          content='Personal page of the amazing web developer Kelly Keating'
+        />
       </Head>
 
-      <Header/>
+      <Header />
       <main>
-        <div className={pathname === "/" ? "" : "content"}>
-          {pathname !== "/" && <BackButton />}
+        <div className={pathname === '/' ? '' : 'content'}>
+          {pathname !== '/' && <BackButton />}
           {children}
         </div>
       </main>

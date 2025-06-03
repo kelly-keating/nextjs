@@ -1,11 +1,11 @@
 import Markdown from 'react-markdown'
-import { getFileContent, getFileNames } from "../../api/docs"
+import { getFileContent, getFileNames } from '../../api/docs'
 
 function Doc({ fileContents, fileName }) {
   return (
-    <div className="docs_container">
-      <div className="markdown_container">
-    	  <Markdown>{fileContents}</Markdown>
+    <div className='docs_container'>
+      <div className='markdown_container'>
+        <Markdown>{fileContents}</Markdown>
       </div>
     </div>
   )
@@ -14,9 +14,9 @@ function Doc({ fileContents, fileName }) {
 export async function getStaticPaths() {
   const files = await getFileNames()
   const paths = files.map((fileName) => ({
-      params: { fileName },
+    params: { fileName },
   }))
-  return  { paths, fallback: false }
+  return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
@@ -25,7 +25,7 @@ export async function getStaticProps({ params }) {
     props: {
       fileContents,
       fileName: params.fileName,
-    }
+    },
   }
 }
 

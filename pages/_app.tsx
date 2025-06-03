@@ -10,12 +10,14 @@ const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
     setMounted(true)
   }, [])
-  
+
   return mounted ? (
     <Layout>
       <Component {...pageProps} />
     </Layout>
-  ) : <></>
+  ) : (
+    <></>
+  )
 }
 
 export default MyApp

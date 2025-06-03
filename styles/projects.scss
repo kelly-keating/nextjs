@@ -26,8 +26,8 @@
   @include mobile {
     flex-direction: column-reverse;
   }
-  
-  @include not-mobile {    
+
+  @include not-mobile {
     &:nth-child(odd) {
       flex-direction: row-reverse;
     }
@@ -60,7 +60,7 @@
     max-width: 200px;
 
     @include not-mobile {
-      //TODO: fix landscape vert centering on desktop 
+      //TODO: fix landscape vert centering on desktop
     }
   }
 
